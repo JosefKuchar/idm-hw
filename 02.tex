@@ -1,0 +1,40 @@
+\section*{Příklad 2}
+Určete, pro která přirozená čísla platí následující nerovnost. Dokažte matematickou indukcí.
+$$ 1 + 3 + 5 + \hdots + (2n - 1) \leq 2n^2 - 2.$$
+První krok
+
+pro n = 1
+\begin{equation*}
+  \begin{aligned}
+    1 & \nleq 2 \cdot 1^2 - 2 \\
+    1 & \nleq 0
+  \end{aligned}
+\end{equation*}
+
+pro n = 2
+\begin{equation*}
+  \begin{aligned}
+    1 + 3 & \leq 2 \cdot 2^2 - 2 \\
+    4     & \leq 6
+  \end{aligned}
+\end{equation*}
+Druhý krok
+
+Předpokládáme: n = k
+
+$$ 1 + 3 + 5 + \hdots + (2k - 1) \leq 2k^2 - 2$$
+
+Dokazujeme: n = k + 1
+
+\begin{equation*}
+  \begin{aligned}
+    1 + 3 + 5 + \hdots + (2k - 1) + \left(2 \left(k + 1 \right) - 1 \right) & \leq 2(k+1)^2 - 2                       \\
+    1 + 3 + 5 + \hdots + (2k - 1) + \left(2k + 1 \right)                    & \leq 2k^2 + 4k                          \\
+    1 + 3 + 5 + \hdots + (2k - 1) + \left(2k + 1 \right)                    & \leq 2k^2 - 2 + (2k + 1) \leq 2k^2 + 4k \\
+    2k^2 - 2 + (2k + 1)                                                     & \leq 2k^2 + 4k                          \\
+    2k^2 + 2k - 1                                                           & \leq 2k^2 + 4k                          \\
+    2k - 1                                                                  & \leq 4k                                 \\
+    - 1                                                                     & \leq 2k
+  \end{aligned}
+\end{equation*}
+Nerovnost platí pro $ n \geq 2, n \in \mathbb{Z} $.
